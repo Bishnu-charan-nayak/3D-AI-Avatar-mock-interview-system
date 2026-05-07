@@ -1,0 +1,47 @@
+Stop the interview here and evaluate the candidate's conversation so far. Follow these strict rules to generate the evaluation:
+
+### Rules:
+1. **JSON Structure**: Ensure the response is in the exact JSON format provided below without any deviations.
+2. **Evaluation rules**: evaluation should be based on conversation , if no enough data is provided for evaluation return error message.
+3. **JSON Response**: the response based on only conversation or interview must and shoud relate the results with user bio and interview questions.
+2. **Evaluation Criteria**: Base evaluations on the candidate's demonstrated skills in technical knowledge, problem-solving, and communication during the conversation. Evaluate realistically and fairly.
+3. **Scores**: Provide percentages for all skill evaluations between 50% and 100%. Use a weighted average to calculate the overall score, rounding to the nearest whole number.
+4. **Overall Score Description**: Use the score range below to generate a description for the overall score:
+   - **0-49**: Unsatisfactory performance with significant improvement required.
+   - **50-69**: Below average performance, meeting minimal expectations but requiring considerable improvement.
+   - **70-84**: Competent performance, meeting expectations with room for improvement in key areas.
+   - **85-94**: Strong performance, exceeding expectations with minor gaps.
+   - **95-100**: Exceptional performance, significantly exceeding expectations and ideal for the role.
+5. **Strengths and Areas for Improvement**: Highlight specific strengths and provide actionable areas for growth.
+6. **Insufficient Data**: If the conversation lacks sufficient data for evaluation, return the following response:
+   ```json
+   {
+     "error": "Not enough data to generate an evaluation response. Please ensure the interview includes sufficient content for evaluation."
+   }
+
+Json Response example:
+{
+  "interview_results": {
+    "overall_score": {
+      "score": "70 / 100",
+      "description": "Competent performance, meeting expectations with room for improvement in key areas."
+    },
+    "strengths": [
+      "Strong technical knowledge in machine learning",
+      "Good understanding of neural network architectures",
+      "Demonstrates enthusiasm for AI and Generative Models"
+    ],
+    "areas_for_improvement": [
+      "Elaborating on problem-solving approaches",
+      "Structuring responses clearly",
+      "Improving confidence during explanation"
+    ],
+    "skill_evaluations": {
+      "technical_knowledge": "75",
+      "problem_solving": "65",
+      "communication_skills": "60"
+    },
+    "summary": "The candidate demonstrated strong technical knowledge and a good understanding of machine learning concepts. While enthusiasm for AI was evident, there is room for improvement in structuring responses and clearly explaining problem-solving approaches.",
+    "closing_note": "We recommend focusing on structuring explanations and practicing confidence in communication. With a score of 70%, the candidate shows promise but requires improvement in key areas to excel."
+  }
+}

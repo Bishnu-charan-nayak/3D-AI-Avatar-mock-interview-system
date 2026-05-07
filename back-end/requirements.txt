@@ -1,0 +1,12 @@
+PyPDF2
+# Pin LangChain to the 0.3.x line (your code uses langchain.prompts/chains/memory).
+langchain>=0.3,<0.4
+langchain-core>=0.3,<0.4
+langchain-groq>=0.2,<0.3
+langchain-google-genai
+
+fastapi
+uvicorn
+edge-tts
+pydub
+python-dotenv

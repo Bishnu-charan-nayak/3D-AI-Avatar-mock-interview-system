@@ -1,0 +1,155 @@
+/* ═══════════════════════════════════════════════════════════════
+   AETHERIS ENTERPRISE — Interview Interface
+   Dual-Pane · Holographic Chat · Cyan Glow Controls
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Main Container ── */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 24px;
+  background: rgba(13, 14, 18, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 242, 255, 0.06);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 0.6s ease-out;
+  box-sizing: border-box;
+}
+
+/* ── Dual Pane Layout ── */
+.container-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  background: rgba(2, 2, 3, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 242, 255, 0.06);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Avatar pane — subtle glow */
+.left-side {
+  box-shadow: inset 0 0 40px rgba(0, 242, 255, 0.03);
+}
+
+.left-side canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+}
+
+/* ── Generate Results Button ── */
+.Interview-button {
+  align-self: flex-end;
+  padding: 12px 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
+  background: var(--primary-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+  margin-bottom: 16px;
+}
+
+.Interview-button:hover:not(:disabled) {
+  background: #33f5ff;
+  box-shadow: 0 0 25px rgba(0, 242, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.Interview-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ═══ CHAT VIEW ═══ */
+.chat-view-container {
+  width: 100%;
+  height: 260px;
+  overflow-y: auto;
+  background: rgba(2, 2, 3, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border: 1px solid rgba(0, 242, 255, 0.04);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.no-messages {
+  color: var(--text-muted);
+  text-align: center;
+  font-style: italic;
+  margin: auto;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── Bot Message Bubble ── */
+.bot-message {
+  align-self: flex-start;
+  background: rgba(32, 31, 32, 0.9);
+  color: var(--text-primary);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border-bottom-left-radius: 2px;
+  border-left: 2px solid var(--primary-accent);
+  max-width: 75%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ── User Message Bubble ── */
+.user-message {
+  align-self: flex-end;
+  background: rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(0, 242, 255, 0.15);
+  color: #e1fdff;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border-bottom-right-radius: 2px;
+  max-width: 75%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 242, 255, 0.08);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 968px) {
+  .container-media {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-side, .right-side {
+    height: 400px;
+    width: 100%;
+  }
+}

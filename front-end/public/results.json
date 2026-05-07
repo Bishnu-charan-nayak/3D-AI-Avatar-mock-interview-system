@@ -1,0 +1,23 @@
+{
+  "interview_results": {
+    "overall_score": {
+      "score": "60 / 100",
+      "description": "Below average performance, meeting minimal expectations but requiring considerable improvement."
+    },
+    "strengths": [
+      "Familiarity with ML approaches",
+      "Experience in facial recognition"
+    ],
+    "areas_for_improvement": [
+      "Improving communication skills",
+      "Enhancing problem-solving skills"
+    ],
+    "skill_evaluations": {
+      "technical_knowledge": "70",
+      "problem_solving": "50",
+      "communication_skills": "60"
+    },
+    "summary": "The candidate demonstrated some technical knowledge and experience in facial recognition. However, there is room for improvement in communication skills and problem-solving abilities.",
+    "closing_note": "We recommend focusing on improving communication skills and problem-solving abilities to further enhance performance. With 60% overall score, the candidate meets minimal expectations but requires considerable improvement."
+  }
+}
