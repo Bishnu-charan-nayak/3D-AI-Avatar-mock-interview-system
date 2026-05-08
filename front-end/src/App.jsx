@@ -14,7 +14,6 @@ function App() {
     setInterviewResponse(response);
     setShowLanding(false);
   };
-
   const handleEvaluation = (evaluationData) => {
     setEvaluationData(evaluationData);
   };
