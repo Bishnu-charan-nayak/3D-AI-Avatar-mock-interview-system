@@ -41,6 +41,7 @@ export default function GlowCursor() {
       el.addEventListener('mouseleave', handleLeaveInteractive);
     });
 
+    
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       interactives.forEach((el) => {
