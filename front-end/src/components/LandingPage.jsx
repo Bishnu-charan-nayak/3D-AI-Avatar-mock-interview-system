@@ -2,6 +2,7 @@
  * LandingPage — Premium scroll-driven landing experience
  * Sections: Hero (pinned) → Features (staggered cards) → Workflow (timeline) → Team → CTA (setup form)
  * Uses GSAP ScrollTrigger for scrubbed animations, Lenis for smooth scroll.
+ *Happy Coding 
  */
 import React, { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
