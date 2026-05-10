@@ -27,7 +27,7 @@ const retargetedClips = new WeakSet();
  * root track. Neither exists in the RPM GLB skeleton, causing Three.js warnings
  * and silent animation failures.
  */
-function retargetAnimation(clip) a {
+function retargetAnimation(clip){
   if (retargetedClips.has(clip)) return clip; // already done
   retargetedClips.add(clip);
 
