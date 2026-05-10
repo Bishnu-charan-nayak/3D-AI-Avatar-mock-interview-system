@@ -25,7 +25,7 @@ export function Experience({ botResponse }) {
       <directionalLight
         position={[-5, 3, -3]}
         intensity={0.4}
-        color="#a0c4ff"
+        color="#a0c4ff1"
       />
 
       <Avatar botResponse={botResponse} />
