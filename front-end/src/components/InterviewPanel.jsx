@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { Experience } from "./Experience"
+import { Experience } from "./Experience";
 import Me from "./me";
 import { Canvas } from "@react-three/fiber";
 // Keep useLoader if results.json is used as a fallback or for other purposes
