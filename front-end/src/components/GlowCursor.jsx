@@ -2,7 +2,7 @@
  * GlowCursor — Custom glowing cursor with GSAP quickTo for smooth lag
  * Scales up on interactive elements. Hidden on touch devices.
  */
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 
 export default function GlowCursor() {
