@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { create } from "zustand";
+import { create } from "zustand"
 
 // Zustand Store
 export const useAIStore = create((set) => ({
