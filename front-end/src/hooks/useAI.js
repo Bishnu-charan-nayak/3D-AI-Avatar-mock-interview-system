@@ -9,7 +9,6 @@ export const useAIStore = create((set) => ({
   setTranscription: (text) => set({ transcription: text }),
   setBotResponse: (response) => set({ botResponse: response }),
   setLoading: (status) => set({ loading: status }),
-  setLoading: (Status) => set ({Loading: status}),
 }));
 
 // Custom Hook
