@@ -17,7 +17,7 @@ function App() {
     setShowLanding(false);
   };
   const handleEvaluation = (evaluationData) => {
-    setEvaluationData(evaluationData);
+    setEvaluationData(evaluationData); 
   };
 
   return (
