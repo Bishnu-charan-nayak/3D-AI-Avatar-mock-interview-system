@@ -6,7 +6,6 @@ import InterviewPanel from "./components/InterviewPanel";
 import ResultsPallet from "./components/ResultsPallet";
 import "./App.css";
 
-
 function App() {
   const [showLanding, setShowLanding] = useState(true);
   const [interviewResponse, setInterviewResponse] = useState(null);
