@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import InterviewPanel from "./components/InterviewPanel";
-import ResultsPallet from "./components/ResultsPallet";
+import ResultsPallet from "./components/ResultsPallet"
 import "./App.css";
 
 function App() {
