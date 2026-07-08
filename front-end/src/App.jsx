@@ -18,7 +18,7 @@ function App() {
   const handleEvaluation = (evaluationData) => {
     setEvaluationData(evaluationData); 
   };
-  
+
   return (
     <div className="App">
       <Navbar />
