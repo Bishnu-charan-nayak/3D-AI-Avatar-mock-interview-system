@@ -2,4 +2,5 @@
 Must install Anaconda and set env 3.11 or 3.12 both are work
 check if any error u  cant resolve contact me 
 This project under processing like Add some smoothness in animation etc. 
-Some update and changes 
+Some update and changes .
+Please check code after download then run
